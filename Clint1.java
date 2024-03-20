@@ -1,0 +1,18 @@
+import java.io.*;
+import java.net.*;
+class Clint1
+{
+   public static void main(String args[])throws Exception
+{
+    Socket s=new Socket("10.7.103.199",567);
+    InputStream obj=s.getInputStream();
+    BufferedReader br = new BufferedReader(new InputStreamReader(obj));
+    String str;
+    while((str=br.readLine())!=null)
+{
+  System.out.println(str);
+}
+br.close();
+s.close();
+}
+}
