@@ -4,7 +4,7 @@ class Clint1
 {
    public static void main(String args[])throws Exception
 {
-    Socket s=new Socket("10.7.103.199",567);
+    Socket s=new Socket("Server_ip_address",567);
     InputStream obj=s.getInputStream();
     BufferedReader br = new BufferedReader(new InputStreamReader(obj));
     String str;
